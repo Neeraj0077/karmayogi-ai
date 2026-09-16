@@ -1,9 +1,6 @@
 import {
   ArrowUpRight,
-  BookOpen,
   Brain,
-  Target,
-  Trophy,
 } from "lucide-react";
 
 import StatCard from "../components/StatCard";

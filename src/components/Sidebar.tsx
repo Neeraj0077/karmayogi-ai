@@ -6,7 +6,6 @@ import {
   LayoutDashboard,
   Settings,
   Target,
-  Users,
 } from "lucide-react";
 import { NavLink } from "react-router-dom";
 

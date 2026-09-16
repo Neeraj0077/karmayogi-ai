@@ -19,19 +19,19 @@ export default function Assessment() {
   };
 
   const submitAnswer = () => {
-    if (selected === null) return;
+  if (selected === null) return;
 
-    if (current < questions.length - 1) {
-      setCurrent(current + 1);
-      setSelected(null);
-    } else {
-      setScore(
-        questions.reduce((total, q, index) => {
-          return total + (index === 0 ? 1 : 0);
-        }, 0)
-      );
-    }
-  };
+  if (current < questions.length - 1) {
+    setCurrent(current + 1);
+    setSelected(null);
+  } else {
+    setScore(
+      questions.reduce((total, _, index) => {
+        return total + (index === 0 ? 1 : 0);
+      }, 0)
+    );
+  }
+};
 
   if (score !== null) {
     return (
